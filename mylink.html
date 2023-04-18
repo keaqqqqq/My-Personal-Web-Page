@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Links</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/670c42387c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navigation" id="navigation">
+        <div class="nav_1">
+            <img src="me.jpg" alt="">
+            <h1 style="font-size: 40px; color: #00539CFF;">CHU KEA QIU</h1>
+            <p style="color: #00539CFF; font-weight: 600;">Sem 4 IT Student</p>
+        </div>
+        <div class="nav_2">
+            <ul>
+                <li><a href="myself.html">About Me </a></li>
+                <li><a href="mygallery.html">My Photos</a></li>
+                <li><a href="mylink.html">My Favourite Links </a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <img src="menu.png" class="menu-icon">
+    </div>
+
+    <div class="link">
+        <h1>My Favourie Links</h1>
+
+        <ul>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            <p>I use W3Schools to learn many programming and markup languages, including HTML, CSS, JavaScript, and their respective frameworks.</p>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <p>I always rely on Stack Overflow to help me solve problems when I'm coding. It's a great resource for finding solutions to common issues and learning from experienced developers.</p>
+            <li><a href="https://openai.com/blog/chatgpt">ChatGPT</a></li>
+            <p>Whenever I come across something that I don't understand easily while studying web development, I usually turn to ChatGPT for help. ChatGPT's vast knowledge and expertise in various areas have been invaluable in helping me grasp difficult concepts and improving my skills.</p>
+        </ul>
+    </div>
+
+
+
+    <script>
+        const toggleMenuBtn = document.querySelector('.menu-icon');
+        const nav = document.querySelector('.navigation');
+
+        toggleMenuBtn.addEventListener('click', function() {
+        nav.classList.toggle('toggled');
+        });
+    </script>
+</body>
+</html>

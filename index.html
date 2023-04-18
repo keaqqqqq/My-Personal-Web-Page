@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/670c42387c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navigation" id="navigation">
+        <div class="nav_1">
+            <img src="me.jpg" alt="">
+            <h1 style="font-size: 40px; color: #00539CFF;">CHU KEA QIU</h1>
+            <p style="color: #00539CFF; font-weight: 600;">Sem 4 IT Student</p>
+        </div>
+        <div class="nav_2">
+            <ul>
+                <li><a href="myself.html">About Me </a></li>
+                <li><a href="mygallery.html">My Photos</a></li>
+                <li><a href="mylink.html">My Favourite Links </a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <img src="menu.png" class="menu-icon">
+    </div>
+
+    <div class="about">
+        <h3>HI THERE <i class="fa-solid fa-hand" style="color: #EEA47FFF;"></i></h3>
+        <br>
+        <h1 style="color: white;">I'm   <span>Chu Kea Qiu</span></h1>
+        <p>Hey there, welcome to my website! It's like a mini-me in digital form, with all sorts of fun stuff to explore. 
+           Just click on the links on the left to learn more about me and what I'm all about. It's a bit like going 
+           down a rabbit hole, but don't worry - I promise there's no Mad Hatter waiting for you at the bottom 
+           (or is there...?) So go ahead and click away, and let's see where this wild ride takes us!</p>
+        <br>
+        <br>
+        <br>
+        <a class ="btn" href="myself.html">CLICK FOR MORE <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <script>
+     const toggleMenuBtn = document.querySelector('.menu-icon');
+    const nav = document.querySelector('.navigation');
+
+    toggleMenuBtn.addEventListener('click', function() {
+    nav.classList.toggle('toggled');
+    });
+    </script>
+</body>
+</html>
